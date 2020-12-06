@@ -10,4 +10,9 @@ public class NoChunkWorldGenerator extends ChunkGenerator {
     public ChunkData generateChunkData(final World world, final Random random, final int x, final int z, final BiomeGrid biome) {
         return this.createChunkData(world);
     }
+
+    @Override
+    public boolean isParallelCapable() {
+        return true;
+    }
 }
